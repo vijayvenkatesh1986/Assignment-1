@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Click the button to return the lowest and highest number of 5 and 10.</p>
+
+<button onclick="myFunction()">Minimum Value</button>
+<button onclick="myFunction1()">Maximum Value</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+    
+    document.getElementById("demo").innerHTML = Math.min(5,10);
+
+}
+function myFunction1()
+{
+document.getElementById("demo").innerHTML = Math.max(5,10);
+}
+</script>
+
+</body>
+</html>

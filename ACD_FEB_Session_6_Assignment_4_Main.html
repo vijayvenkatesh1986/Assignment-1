@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<body>
+<script type = "text/javascript">
+function checkBrackets(str)
+{
+    var depth = 0;
+    for(var i in str)
+     {   
+        if(str[i] == '(')
+        {
+            depth ++;
+        } 
+        else if(str[i] == ')') 
+        {
+            depth --;
+        }  
+        if (depth < 0) 
+	{
+           return "incorrect";
+        }
+    if(depth > 0) 
+	{
+           return "incorrect";
+        }
+    if(depth == 0)
+     {
+    return "correct";
+     }
+}
+}
+document.write(checkBrackets( '(( a + b ) / 5 abd )' )); 
+document.write("<br>")
+document.write(checkBrackets( ') ( a + b ) )' ));
+document.write("<br>")
+document.write(checkBrackets( '( b * ( c + d *2 / ( 2 + ( 12 abc / ( a + 3 ) ) ) )' ));
+</script>
+</body>
+</html>
